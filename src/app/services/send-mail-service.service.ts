@@ -11,6 +11,6 @@ export class SendMailServiceService {
   constructor(private http: HttpClient) { }
 
   sendEmail(obj: Iinfo): Observable<Iinfo> {
-    return this.http.post<Iinfo>('http://localhost:3000/sendFormData', obj);
+    return this.http.post<Iinfo>('https://dry-temple-03099.herokuapp.com/sendFormData', obj);
   }
 }
