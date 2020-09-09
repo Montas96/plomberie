@@ -1,48 +1,49 @@
 <div class="spinner-wrapper">
-  <div class="spinner">
-      <div class="bounce1"></div>
-      <div class="bounce2"></div>
-      <div class="bounce3"></div>
-  </div>
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
 </div>
 <!-- end of preloader -->
 
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-  <!-- Text Logo - Use this if you don't have a graphic logo -->
-  <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
+    <!-- Text Logo - Use this if you don't have a graphic logo -->
+    <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Evolo</a> -->
 
-  <!-- Image Logo -->
-  <a class="navbar-brand logo-image" href="index.html"><img src="assets/images/logo.svg" alt="alternative"></a>
-  
-  <!-- Mobile Menu Toggle Button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-awesome fas fa-bars"></span>
-      <span class="navbar-toggler-awesome fas fa-times"></span>
-  </button>
-  <!-- end of mobile menu toggle button -->
+    <!-- Image Logo -->
+    <a class="navbar-brand logo-image" href="index.html"><img src="assets/images/logo.svg" alt="alternative"></a>
 
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-              <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link page-scroll" href="#services">Services</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link page-scroll" href="#pricing">Pricing</a>
-          </li>
-          <!-- <li class="nav-item">
+    <!-- Mobile Menu Toggle Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-awesome fas fa-bars"></span>
+        <span class="navbar-toggler-awesome fas fa-times"></span>
+    </button>
+    <!-- end of mobile menu toggle button -->
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="#pricing">Pricing</a>
+            </li>
+            <!-- <li class="nav-item">
               <a class="nav-link page-scroll" href="#request">Request</a>
           </li> -->
 
-          <!-- Dropdown Menu -->        
-          <li class="nav-item">
-            <a class="nav-link page-scroll" href="#video">About</a>
-        </li>  
-          <!-- <li class="nav-item dropdown">
+            <!-- Dropdown Menu -->
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="#video">About</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">Terms Conditions</span></a>
@@ -50,342 +51,280 @@
                   <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">Privacy Policy</span></a>
               </div>
           </li> -->
-          <!-- end of dropdown menu -->
+            <!-- end of dropdown menu -->
 
-          <li class="nav-item">
-              <a class="nav-link page-scroll" href="#contact">Contact</a>
-          </li>
-      </ul>
-      <span class="nav-item social-icons">
-          <span class="fa-stack">
-              <a href="#your-link">
-                  <i class="fas fa-circle fa-stack-2x facebook"></i>
-                  <i class="fab fa-facebook-f fa-stack-1x"></i>
-              </a>
-          </span>
-          <span class="fa-stack">
-              <a href="#your-link">
-                  <i class="fas fa-circle fa-stack-2x twitter"></i>
-                  <i class="fab fa-twitter fa-stack-1x"></i>
-              </a>
-          </span>
-      </span>
-  </div>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="#contact">Contact</a>
+            </li>
+        </ul>
+        <span class="nav-item social-icons">
+            <span class="fa-stack">
+                <a href="#your-link">
+                    <i class="fas fa-circle fa-stack-2x facebook"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                </a>
+            </span>
+            <span class="fa-stack">
+                <a href="#your-link">
+                    <i class="fas fa-circle fa-stack-2x twitter"></i>
+                    <i class="fab fa-twitter fa-stack-1x"></i>
+                </a>
+            </span>
+        </span>
+    </div>
 </nav> <!-- end of navbar -->
 <!-- end of navigation -->
 
+<mdb-carousel class="carousel slide carousel-fade" [animation]="'slide'">
+    <mdb-carousel-item>
+        <div class="view w-100">
+            <img class="d-block w-100 image" src="assets/images/banner.jpg" alt="First slide">
+            <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+        </div>
+        <div class="carousel-caption">
+            <h3 class="h3-responsive">Plomberie industriellel</h3>
+        </div>
+    </mdb-carousel-item>
+    <mdb-carousel-item>
+        <div class="view w-100">
+            <img class="d-block w-100 image" src="assets/images/banner_2.jpg" alt="Second slide">
+            <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+        </div>
+        <div class="carousel-caption">
+            <h3 class="h3-responsive">Plomberie industriellel</h3>
+        </div>
+    </mdb-carousel-item>
+    <mdb-carousel-item>
+        <div class="view w-100">
+            <img class="d-block w-100 image" src="assets/images/banner_3.jpg" alt="Third slide">
+            <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
+        </div>
+        <div class="carousel-caption">
+            <h3 class="h3-responsive">Plomberie industriellel</h3>
+        </div>
+    </mdb-carousel-item>
+    <mdb-carousel-item>
+        <div class="view w-100">
+            <img class="d-block w-100 image" src="assets/images/chauffage_par_le_sol.jpg" alt="Third slide">
+            <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
+        </div>
+        <div class="carousel-caption">
+            <h3 class="h3-responsive">Chauffage par le sol</h3>
+        </div>
+    </mdb-carousel-item>
+    <mdb-carousel-item>
+        <div class="view w-100">
+            <img class="d-block w-100 image" src="assets/images/chauffage_par_le_sol_2.jpg" alt="Third slide">
+            <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
+        </div>
+        <div class="carousel-caption">
+            <h3 class="h3-responsive">Chauffage par le sol</h3>
+        </div>
+    </mdb-carousel-item>
+    <mdb-carousel-item>
+        <div class="view w-100">
+            <img class="d-block w-100 image" src="assets/images/plomberie industrielle.jpg" alt="Third slide">
+            <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
+        </div>
+        <div class="carousel-caption">
+            <h3 class="h3-responsive">Plomberie industriellel</h3>
+        </div>
+    </mdb-carousel-item>
+</mdb-carousel>
 
 <!-- Header -->
 <header id="header" class="header">
-  <div class="header-content">
-      <div class="container">
-          <div class="row" style="background: url(assets/images/1.png);">
-              <div class="col-lg-6">
-                  <div class="text-container">
-                      <h1><span class="turquoise">Société Rizgi De plomberie général </span> Page Template Free</h1>
-                      <p class="p-large">Use Evolo free landing page template to promote your business startup and generate leads for the offered services</p>
-                      <!-- <a class="btn-solid-lg page-scroll" href="#services">DISCOVER</a> -->
-                  </div> <!-- end of text-container -->
-              </div> <!-- end of col -->
-              <div class="col-lg-6">
-                  <div class="image-container">
-                      <img class="img-fluid" src="assets/images/2.png" alt="alternative">
-                  </div> <!-- end of image-container -->
-              </div> <!-- end of col -->
-          </div> <!-- end of row -->
-      </div> <!-- end of container -->
-  </div> <!-- end of header-content -->
+    <div class="header-content">
+        <div class="container">
+            <div class="row" style="background: url(assets/images/1.png);">
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h1><span class="turquoise">Société Rizgi De plomberie général </span> Page Template Free</h1>
+                        <p class="p-large">Use Evolo free landing page template to promote your business startup and
+                            generate leads for the offered services</p>
+                        <!-- <a class="btn-solid-lg page-scroll" href="#services">DISCOVER</a> -->
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="assets/images/2.png" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of header-content -->
 </header> <!-- end of header -->
 <!-- end of header -->
 
 
-<!-- Customers -->
-<div class="slider-1">
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-12">
-              <!-- <h5>Trusted By</h5> -->
-              
-              <!-- Image Slider -->
-              <div class="slider-container">
-                <mdb-carousel class="carousel slide carousel-fade" [animation]="'slide'">
-                    <mdb-carousel-item>
-                      <div class="view w-100">
-                        <img class="d-block w-100 image" src="assets/images/banner.jpg" alt="First slide">
-                        <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
-                      </div>
-                      <div class="carousel-caption">
-                        <h3 class="h3-responsive">Plomberie industriellel</h3>
-                      </div>
-                    </mdb-carousel-item>
-                    <mdb-carousel-item>
-                      <div class="view w-100">
-                        <img class="d-block w-100 image" src="assets/images/banner_2.jpg" alt="Second slide">
-                        <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
-                      </div>
-                      <div class="carousel-caption">
-                        <h3 class="h3-responsive">Plomberie industriellel</h3>
-                      </div>
-                    </mdb-carousel-item>
-                    <mdb-carousel-item>
-                      <div class="view w-100">
-                        <img class="d-block w-100 image" src="assets/images/banner_3.jpg" alt="Third slide">
-                        <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
-                      </div>
-                      <div class="carousel-caption">
-                        <h3 class="h3-responsive">Plomberie industriellel</h3>
-                      </div>
-                    </mdb-carousel-item>
-                    <mdb-carousel-item>
-                        <div class="view w-100">
-                          <img class="d-block w-100 image" src="assets/images/chauffage_par_le_sol.jpg" alt="Third slide">
-                          <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
-                        </div>
-                        <div class="carousel-caption">
-                          <h3 class="h3-responsive">Chauffage par le sol</h3>
-                        </div>
-                      </mdb-carousel-item>
-                      <mdb-carousel-item>
-                        <div class="view w-100">
-                          <img class="d-block w-100 image" src="assets/images/chauffage_par_le_sol_2.jpg" alt="Third slide">
-                          <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
-                        </div>
-                        <div class="carousel-caption">
-                          <h3 class="h3-responsive">Chauffage par le sol</h3>
-                        </div>
-                      </mdb-carousel-item>
-                      <mdb-carousel-item>
-                        <div class="view w-100">
-                          <img class="d-block w-100 image" src="assets/images/plomberie industrielle.jpg" alt="Third slide">
-                          <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
-                        </div>
-                        <div class="carousel-caption">
-                          <h3 class="h3-responsive">Plomberie industriellel</h3>
-                        </div>
-                      </mdb-carousel-item>
-                  </mdb-carousel>
-                  <!-- <div class="swiper-container image-slider">
-                      <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                              <div class="image-container">
-                                  <img class="img-responsive" src="assets/images/banner.jpg" alt="alternative">
-                              </div>
-                          </div>
-                          <div class="swiper-slide">
-                              <div class="image-container">
-                                  <img class="img-responsive" src="assets/images/banner_2.jpg" alt="alternative">
-                              </div>
-                          </div>
-                          <div class="swiper-slide">
-                              <div class="image-container">
-                                  <img class="img-responsive" src="assets/images/customer-logo-3.png" alt="alternative">
-                              </div>
-                          </div>
-                          <div class="swiper-slide">
-                              <div class="image-container">
-                                  <img class="img-responsive" src="assets/images/customer-logo-4.png" alt="alternative">
-                              </div>
-                          </div>
-                          <div class="swiper-slide">
-                              <div class="image-container">
-                                  <img class="img-responsive" src="assets/images/customer-logo-5.png" alt="alternative">
-                              </div>
-                          </div>
-                          <div class="swiper-slide">
-                              <div class="image-container">
-                                  <img class="img-responsive" src="assets/images/customer-logo-6.png" alt="alternative">
-                              </div>
-                          </div>
-                      </div> 
-                  </div>  -->
-              </div> 
-
-          </div> <!-- end of col -->
-      </div> <!-- end of row -->
-  </div> <!-- end of container -->
-</div> <!-- end of slider-1 -->
-<!-- end of customers -->
-
 
 <!-- Services -->
 <div id="services" class="cards-1">
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-12">
-              <h2>Nos services</h2>
-              <p class="p-heading p-large">We serve small and medium sized companies in all tech related industries with high quality growth services which are presented below</p>
-          </div> <!-- end of col -->
-      </div> <!-- end of row -->
-      <div class="row">
-          <div class="col-lg-12">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Nos services</h2>
+                <p class="p-heading p-large">We serve small and medium sized companies in all tech related industries
+                    with high quality growth services which are presented below</p>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
 
-              <!-- Card -->
-              <div class="card">
-                  <img class="card-image" src="assets/images/services-icon-1.svg" alt="alternative">
-                  <div class="card-body">
-                      <h4 class="card-title">Plomberie domestique</h4>
-                      <p>Our team of enthusiastic marketers will analyse and evaluate how your company stacks against the closest competitors</p>
-                  </div>
-              </div>
-              <!-- end of card -->
+                <!-- Card -->
+                <div class="card">
+                    <img class="card-image" src="assets/images/services-icon-1.svg" alt="alternative">
+                    <div class="card-body">
+                        <h4 class="card-title">Plomberie domestique</h4>
+                        <p>Our team of enthusiastic marketers will analyse and evaluate how your company stacks against
+                            the closest competitors</p>
+                    </div>
+                </div>
+                <!-- end of card -->
 
-              <!-- Card -->
-              <div class="card">
-                  <img class="card-image" src="assets/images/services-icon-2.svg" alt="alternative">
-                  <div class="card-body">
-                      <h4 class="card-title">Plomberie industrielle</h4>
-                      <p>Once the market analysis process is completed our staff will search for opportunities that are in reach</p>
-                  </div>
-              </div>
-              <!-- end of card -->
-              
-          </div> <!-- end of col -->
-      </div> <!-- end of row -->
-  </div> <!-- end of container -->
+                <!-- Card -->
+                <div class="card">
+                    <img class="card-image" src="assets/images/services-icon-2.svg" alt="alternative">
+                    <div class="card-body">
+                        <h4 class="card-title">Plomberie industrielle</h4>
+                        <p>Once the market analysis process is completed our staff will search for opportunities that
+                            are in reach</p>
+                    </div>
+                </div>
+                <!-- end of card -->
+
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
 </div> <!-- end of cards-1 -->
 <!-- end of services -->
 
 
 <!-- Details 1 -->
 <div class="basic-1">
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-6">
-              <div class="text-container">
-                  <h2>Design And Plan Your Business Growth Steps</h2>
-                  <p>Use our staff and our expertise to design and plan your business growth strategy. Evolo team is eager to advise you on the best opportunities that you should look into</p>
-                  <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">LIGHTBOX</a>
-              </div> <!-- end of text-container -->
-          </div> <!-- end of col -->
-          <div class="col-lg-6">
-              <div class="image-container">
-                  <img class="img-fluid" src="assets/images/details-1-office-worker.svg" alt="alternative">
-              </div> <!-- end of image-container -->
-          </div> <!-- end of col -->
-      </div> <!-- end of row -->
-  </div> <!-- end of container -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <h2>Design And Plan Your Business Growth Steps</h2>
+                    <p>Use our staff and our expertise to design and plan your business growth strategy. Evolo team is
+                        eager to advise you on the best opportunities that you should look into</p>
+                    <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">LIGHTBOX</a>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <div class="image-container">
+                    <img class="img-fluid" src="assets/images/details-1-office-worker.svg" alt="alternative">
+                </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
 </div> <!-- end of basic-1 -->
 <!-- end of details 1 -->
 
 
-<!-- Details 2 -->
-<div class="basic-2">
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-6">
-              <div class="image-container">
-                  <img class="img-fluid" src="assets/images/details-2-office-team-work.svg" alt="alternative">
-              </div> <!-- end of image-container -->
-          </div> <!-- end of col -->
-          <div class="col-lg-6">
-              <div class="text-container">
-                  <h2>Search For Optimization Wherever Is Possible</h2>
-                  <ul class="list-unstyled li-space-lg">
-                      <li class="media">
-                          <i class="fas fa-check"></i>
-                          <div class="media-body">Basically we'll teach you step by step what you need to do</div>
-                      </li>
-                      <li class="media">
-                          <i class="fas fa-check"></i>
-                          <div class="media-body">In order to develop your company and reach new heights</div>
-                      </li>
-                      <li class="media">
-                          <i class="fas fa-check"></i>
-                          <div class="media-body">Everyone will be pleased from stakeholders to employees</div>
-                      </li>
-                  </ul>
-                  <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">LIGHTBOX</a>
-              </div> <!-- end of text-container -->
-          </div> <!-- end of col -->
-      </div> <!-- end of row -->
-  </div> <!-- end of container -->
-</div> <!-- end of basic-2 -->
-<!-- end of details 2 -->
+
 
 <!-- Details Lightboxes -->
 <!-- Details Lightbox 1 -->
 <div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
-  <div class="container">
-      <div class="row">
-          <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-          <div class="col-lg-8">
-              <div class="image-container">
-                  <img class="img-fluid" src="assets/images/details-lightbox-1.svg" alt="alternative">
-              </div> <!-- end of image-container -->
-          </div> <!-- end of col -->
-          <div class="col-lg-4">
-              <h3>Design And Plan</h3>
-              <hr>
-              <h5>Core feature</h5>
-              <p>The emailing module basically will speed up your email marketing operations while offering more subscriber control.</p>
-              <p>Do you need to build lists for your email campaigns? It just got easier with Evolo.</p>
-              <ul class="list-unstyled li-space-lg">
-                  <li class="media">
-                      <i class="fas fa-check"></i><div class="media-body">List building framework</div>
-                  </li>
-                  <li class="media">
-                      <i class="fas fa-check"></i><div class="media-body">Easy database browsing</div>
-                  </li>
-                  <li class="media">
-                      <i class="fas fa-check"></i><div class="media-body">User administration</div>
-                  </li>
-                  <li class="media">
-                      <i class="fas fa-check"></i><div class="media-body">Automate user signup</div>
-                  </li>
-                  <li class="media">
-                      <i class="fas fa-check"></i><div class="media-body">Quick formatting tools</div>
-                  </li>
-                  <li class="media">
-                      <i class="fas fa-check"></i><div class="media-body">Fast email checking</div>
-                  </li>
-              </ul>
-              <a class="btn-solid-reg mfp-close page-scroll" href="#request">REQUEST</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
-          </div> <!-- end of col -->
-      </div> <!-- end of row -->
-  </div> <!-- end of container -->
+    <div class="container">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <div class="image-container">
+                    <img class="img-fluid" src="assets/images/details-lightbox-1.svg" alt="alternative">
+                </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Design And Plan</h3>
+                <hr>
+                <h5>Core feature</h5>
+                <p>The emailing module basically will speed up your email marketing operations while offering more
+                    subscriber control.</p>
+                <p>Do you need to build lists for your email campaigns? It just got easier with Evolo.</p>
+                <ul class="list-unstyled li-space-lg">
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">List building framework</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">Easy database browsing</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">User administration</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">Automate user signup</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">Quick formatting tools</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">Fast email checking</div>
+                    </li>
+                </ul>
+                <a class="btn-solid-reg mfp-close page-scroll" href="#request">REQUEST</a> <a
+                    class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
 </div> <!-- end of lightbox-basic -->
 <!-- end of details lightbox 1 -->
 
 <!-- Details Lightbox 2 -->
 <div id="details-lightbox-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
-  <div class="container">
-      <div class="row">
-          <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-          <div class="col-lg-8">
-              <div class="image-container">
-                  <img class="img-fluid" src="assets/images/details-lightbox-2.svg" alt="alternative">
-              </div> <!-- end of image-container -->
-          </div> <!-- end of col -->
-          <div class="col-lg-4">
-              <h3>Search To Optimize</h3>
-              <hr>
-              <h5>Core feature</h5>
-              <p>The emailing module basically will speed up your email marketing operations while offering more subscriber control.</p>
-              <p>Do you need to build lists for your email campaigns? It just got easier with Evolo.</p>
-              <ul class="list-unstyled li-space-lg">
-                  <li class="media">
-                      <i class="fas fa-check"></i><div class="media-body">List building framework</div>
-                  </li>
-                  <li class="media">
-                      <i class="fas fa-check"></i><div class="media-body">Easy database browsing</div>
-                  </li>
-                  <li class="media">
-                      <i class="fas fa-check"></i><div class="media-body">User administration</div>
-                  </li>
-                  <li class="media">
-                      <i class="fas fa-check"></i><div class="media-body">Automate user signup</div>
-                  </li>
-                  <li class="media">
-                      <i class="fas fa-check"></i><div class="media-body">Quick formatting tools</div>
-                  </li>
-                  <li class="media">
-                      <i class="fas fa-check"></i><div class="media-body">Fast email checking</div>
-                  </li>
-              </ul>
-              <a class="btn-solid-reg mfp-close page-scroll" href="#request">REQUEST</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
-          </div> <!-- end of col -->
-      </div> <!-- end of row -->
-  </div> <!-- end of container -->
+    <div class="container">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+            <div class="col-lg-8">
+                <div class="image-container">
+                    <img class="img-fluid" src="assets/images/details-lightbox-2.svg" alt="alternative">
+                </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
+                <h3>Search To Optimize</h3>
+                <hr>
+                <h5>Core feature</h5>
+                <p>The emailing module basically will speed up your email marketing operations while offering more
+                    subscriber control.</p>
+                <p>Do you need to build lists for your email campaigns? It just got easier with Evolo.</p>
+                <ul class="list-unstyled li-space-lg">
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">List building framework</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">Easy database browsing</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">User administration</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">Automate user signup</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">Quick formatting tools</div>
+                    </li>
+                    <li class="media">
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">Fast email checking</div>
+                    </li>
+                </ul>
+                <a class="btn-solid-reg mfp-close page-scroll" href="#request">REQUEST</a> <a
+                    class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
 </div> <!-- end of lightbox-basic -->
 <!-- end of details lightbox 2 -->
 <!-- end of details lightboxes -->
@@ -393,92 +332,80 @@
 
 <!-- Pricing -->
 <div id="pricing" class="cards-2">
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-12">
-              <h2>Prix</h2>
-              <p class="p-heading p-large">We've prepared pricing plans for all budgets so you can get started right away. They're great for small companies and large organizations</p>
-          </div> <!-- end of col -->
-      </div> <!-- end of row -->
-      <div class="row">
-          <div class="col-lg-12">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Prix</h2>
+                <p class="p-heading p-large">Demande de devis : veuillez remplir le formulaire pour avoir une devis
+                    aproximative via email</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
 
-              <!-- Card-->
-              <div class="card">
-                  <div class="card-body">
-                      <div class="card-title">CLASSIQUE</div>
-                      <div class="card-subtitle">Just to see what can be achieved</div>
-                      <hr class="cell-divide-hr">
-                      <div class="price">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">DEMANDE DEVIS</div>
+                        <div class="card-subtitle">Just to see what can be achieved</div>
+                        <hr class="cell-divide-hr">
+                        <!-- <div class="price">
                           <span class="currency">$</span><span class="value">199</span>
                           <div class="frequency">monthly</div>
-                      </div>
-                      <hr class="cell-divide-hr">
-                      <ul class="list-unstyled li-space-lg">
-                          <li class="media">
-                              <i class="fas fa-check"></i><div class="media-body">Improve Your Email Marketing</div>
-                          </li>
-                          <li class="media">
-                              <i class="fas fa-check"></i><div class="media-body">User And Admin Rights Control</div>
-                          </li>
-                          <li class="media">
-                              <i class="fas fa-times"></i><div class="media-body">List Building And Cleaning</div>
-                          </li>
-                          <li class="media">
-                              <i class="fas fa-times"></i><div class="media-body">Collected Data Management</div>
-                          </li>
-                          <li class="media">
-                              <i class="fas fa-times"></i><div class="media-body">More Planning And Evaluation</div>
-                          </li>
-                      </ul>
-                      <!-- <div class="button-wrapper">
-                          <a class="btn-solid-reg page-scroll" href="#request">REQUEST</a>
                       </div> -->
-                  </div>
-              </div> <!-- end of card -->
-              <!-- end of card -->
 
-              <!-- Card-->
-              <div class="card">
-                  <div class="label">
-                      <p class="best-value">Best Value</p>
-                  </div>
-                  <div class="card-body">
-                      <div class="card-title">HAUT STANDING</div>
-                      <div class="card-subtitle">Must have for large companies</div>
-                      <hr class="cell-divide-hr">
-                      <div class="price">
-                          <span class="currency">$</span><span class="value">399</span>
-                          <div class="frequency">monthly</div>
-                      </div>
-                      <hr class="cell-divide-hr">
-                      <ul class="list-unstyled li-space-lg">
-                          <li class="media">
-                              <i class="fas fa-check"></i><div class="media-body">Improve Your Email Marketing</div>
-                          </li>
-                          <li class="media">
-                              <i class="fas fa-check"></i><div class="media-body">User And Admin Rights Control</div>
-                          </li>
-                          <li class="media">
-                              <i class="fas fa-check"></i><div class="media-body">List Building And Cleaning</div>
-                          </li>
-                          <li class="media">
-                              <i class="fas fa-check"></i><div class="media-body">Collected Data Management</div>
-                          </li>
-                          <li class="media">
-                              <i class="fas fa-check"></i><div class="media-body">More Planning And Evaluation</div>
-                          </li>
-                      </ul>
-                      <!-- <div class="button-wrapper">
-                          <a class="btn-solid-reg page-scroll" href="#request">REQUEST</a>
-                      </div> -->
-                  </div>
-              </div> <!-- end of card -->
-              <!-- end of card -->
+                        <form id="quotaionRequest" data-toggle="validator" data-focus="true">
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="cname"
+                                    [(ngModel)]="quotationRequestObject.name" name="name" required>
+                                <label class="label-control" for="cname">Nom et prenom</label>
+                                <div *ngIf="quotationRequestObject.name === '' || !quotationRequestObject.name"
+                                    class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control-input" id="cemail"
+                                    [(ngModel)]="quotationRequestObject.email" name="email" required>
+                                <label class="label-control" for="cemail">Email</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="cphone"
+                                    [(ngModel)]="quotationRequestObject.phone" name="phone" required>
+                                <label class="label-control" for="cphone">Phone</label>
+                                <div *ngIf="quotationRequestObject.phone === '' || !quotationRequestObject.phone"
+                                    class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control-input" id="caddress"
+                                    [(ngModel)]="quotationRequestObject.address" name="address" required>
+                                <label class="label-control" for="cphone">Address</label>
+                                <div *ngIf="quotationRequestObject.address === '' || !quotationRequestObject.address"
+                                    class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control-textarea" id="cmessage" [(ngModel)]="mailForm.message"
+                                    name="message" required></textarea>
+                                <label class="label-control" for="cmessage">Message</label>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <!-- <div class="form-group checkbox">
+                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree with Evolo's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
+                            <div class="help-block with-errors"></div>
+                        </div> -->
+                            <div class="form-group">
+                                <button type="submit" class="form-control-submit-button"
+                                    (click)="sendQuotationRequest()">Envoyer</button>
+                            </div>
+                            <div class="form-message">
+                                <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
 
-          </div> <!-- end of col -->
-      </div> <!-- end of row -->
-  </div> <!-- end of container -->
+
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
 </div> <!-- end of cards-2 -->
 <!-- end of pricing -->
 
@@ -556,109 +483,117 @@
       </div> 
   </div> 
 </div> -->
- <!-- end of form-1 -->
+<!-- end of form-1 -->
 <!-- end of request -->
 
 
 <!-- Video -->
 <div class="basic-3" id="video">
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-12">
-              <h2>Check Out The Video</h2>
-          </div> <!-- end of col -->
-      </div> <!-- end of row -->
-      <div class="row">
-          <div class="col-lg-12">
-              
-              <!-- Video Preview -->
-              <div class="image-container">
-                  <div class="video-wrapper">
-                      <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
-                          <img class="img-fluid" src="assets/images/video-frame.svg" alt="alternative">
-                          <span class="video-play-button">
-                              <span></span>
-                          </span>
-                      </a>
-                  </div> <!-- end of video-wrapper -->
-              </div> <!-- end of image-container -->
-              <!-- end of video preview -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Check Out The Video</h2>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
 
-              <p>This video will show you a case study for one of our <strong>Major Customers</strong> and will help you understand why your startup needs Evolo in this highly competitive market</p>
-          </div> <!-- end of col -->
-      </div> <!-- end of row -->
-  </div> <!-- end of container -->
+                <!-- Video Preview -->
+                <div class="image-container">
+                    <div class="video-wrapper">
+                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs"
+                            data-effect="fadeIn">
+                            <img class="img-fluid" src="assets/images/video-frame.svg" alt="alternative">
+                            <span class="video-play-button">
+                                <span></span>
+                            </span>
+                        </a>
+                    </div> <!-- end of video-wrapper -->
+                </div> <!-- end of image-container -->
+                <!-- end of video preview -->
+
+                <p>This video will show you a case study for one of our <strong>Major Customers</strong> and will help
+                    you understand why your startup needs Evolo in this highly competitive market</p>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
 </div> <!-- end of basic-3 -->
 <!-- end of video -->
 
 
 <!-- Testimonials -->
 <div class="slider-2">
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-6">
-              <div class="image-container">
-                  <img class="img-fluid" src="assets/images/testimonials-2-men-talking.svg" alt="alternative">
-              </div> <!-- end of image-container -->
-          </div> <!-- end of col -->
-          <div class="col-lg-6">
-              <h2>Testimonials</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="image-container">
+                    <img class="img-fluid" src="assets/images/testimonials-2-men-talking.svg" alt="alternative">
+                </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <h2>Testimonials</h2>
 
-              <!-- Card Slider -->
-              <div class="slider-container">
-                  <div class="swiper-container card-slider">
-                      <div class="swiper-wrapper">
-                          
-                          <!-- Slide -->
-                          <div class="swiper-slide">
-                              <div class="card">
-                                  <img class="card-image" src="assets/images/testimonial-1.svg" alt="alternative">
-                                  <div class="card-body">
-                                      <p class="testimonial-text">I just finished my trial period and was so amazed with the support and results that I purchased Evolo right away at the special price.</p>
-                                      <p class="testimonial-author">Jude Thorn - Designer</p>
-                                  </div>
-                              </div>
-                          </div> <!-- end of swiper-slide -->
-                          <!-- end of slide -->
-  
-                          <!-- Slide -->
-                          <div class="swiper-slide">
-                              <div class="card">
-                                  <img class="card-image" src="assets/images/testimonial-2.svg" alt="alternative">
-                                  <div class="card-body">
-                                      <p class="testimonial-text">Evolo has always helped or startup to position itself in the highly competitive market of mobile applications. You will not regret using it!</p>
-                                      <p class="testimonial-author">Marsha Singer - Developer</p>
-                                  </div>
-                              </div>        
-                          </div> <!-- end of swiper-slide -->
-                          <!-- end of slide -->
-  
-                          <!-- Slide -->
-                          <div class="swiper-slide">
-                              <div class="card">
-                                  <img class="card-image" src="assets/images/testimonial-3.svg" alt="alternative">
-                                  <div class="card-body">
-                                      <p class="testimonial-text">Love their services and was so amazed with the support and results that I purchased Evolo for two years in a row. They are awesome.</p>
-                                      <p class="testimonial-author">Roy Smith - Marketer</p>
-                                  </div>
-                              </div>        
-                          </div> <!-- end of swiper-slide -->
-                          <!-- end of slide -->
-                         
-                      </div> <!-- end of swiper-wrapper -->
-  
-                      <!-- Add Arrows -->
-                      <div class="swiper-button-next"></div>
-                      <div class="swiper-button-prev"></div>
-                      <!-- end of add arrows -->
-  
-                  </div> <!-- end of swiper-container -->
-              </div> <!-- end of slider-container -->
-              <!-- end of card slider -->
+                <!-- Card Slider -->
+                <div class="slider-container">
+                    <div class="swiper-container card-slider">
+                        <div class="swiper-wrapper">
 
-          </div> <!-- end of col -->
-      </div> <!-- end of row -->
-  </div> <!-- end of container -->
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-image" src="assets/images/testimonial-1.svg" alt="alternative">
+                                    <div class="card-body">
+                                        <p class="testimonial-text">I just finished my trial period and was so amazed
+                                            with the support and results that I purchased Evolo right away at the
+                                            special price.</p>
+                                        <p class="testimonial-author">Jude Thorn - Designer</p>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-image" src="assets/images/testimonial-2.svg" alt="alternative">
+                                    <div class="card-body">
+                                        <p class="testimonial-text">Evolo has always helped or startup to position
+                                            itself in the highly competitive market of mobile applications. You will not
+                                            regret using it!</p>
+                                        <p class="testimonial-author">Marsha Singer - Developer</p>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img class="card-image" src="assets/images/testimonial-3.svg" alt="alternative">
+                                    <div class="card-body">
+                                        <p class="testimonial-text">Love their services and was so amazed with the
+                                            support and results that I purchased Evolo for two years in a row. They are
+                                            awesome.</p>
+                                        <p class="testimonial-author">Roy Smith - Marketer</p>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                        </div> <!-- end of swiper-wrapper -->
+
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <!-- end of add arrows -->
+
+                    </div> <!-- end of swiper-container -->
+                </div> <!-- end of slider-container -->
+                <!-- end of card slider -->
+
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
 </div> <!-- end of slider-2 -->
 <!-- end of testimonials -->
 
@@ -771,138 +706,147 @@
 
 <!-- Contact -->
 <div id="contact" class="form-2">
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-12">
-              <h2>Contacter nous</h2>
-              <ul class="list-unstyled li-space-lg">
-                  <li class="address">
-                    N'hésitez pas à nous appeler ou à nous envoyer un message du formulaire de contact</li>
-                  <li><i class="fas fa-map-marker-alt"></i>22 Innovative Area, San Francisco, CA 94043, US</li>
-                  <li><i class="fas fa-phone"></i><a class="turquoise" href="tel:003024630820">+81 720 2212</a></li>
-                  <li><i class="fas fa-envelope"></i><a class="turquoise" href="mailto:rezgui2end@gmail.com">rezgui2end@gmail.comm</a></li>
-              </ul>
-          </div> <!-- end of col -->
-      </div> <!-- end of row -->
-      <div class="row">
-          <div class="col-lg-6">
-              <div class="map-responsive">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555098464!2d-122.507640204439!3d37.757814996609724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sro!4v1498231462606" allowfullscreen></iframe>
-              </div>
-          </div> <!-- end of col -->
-          <div class="col-lg-6">
-              
-              <!-- Contact Form -->
-              <form id="contactForm" data-toggle="validator" data-focus="true">
-                  <div class="form-group">
-                      <input type="text" class="form-control-input" id="cname" [(ngModel)]="mailForm.name" name="name" required>
-                      <label class="label-control" for="cname">Nom et prenom</label>
-                      <div *ngIf="mailForm.name === '' || !mailForm.name" class="help-block with-errors"></div>
-                  </div>
-                  <div class="form-group">
-                      <input type="email" class="form-control-input" id="cemail" [(ngModel)]="mailForm.email" name="email" required>
-                      <label class="label-control" for="cemail">Email</label>
-                      <div class="help-block with-errors"></div>
-                  </div>
-                  <div class="form-group">
-                      <textarea class="form-control-textarea" id="cmessage" [(ngModel)]="mailForm.message" name="message" required></textarea>
-                      <label class="label-control" for="cmessage">Message</label>
-                      <div class="help-block with-errors"></div>
-                  </div>
-                  <!-- <div class="form-group checkbox">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Contacter nous</h2>
+                <ul class="list-unstyled li-space-lg">
+                    <li class="address">
+                        N'hésitez pas à nous appeler ou à nous envoyer un message du formulaire de contact</li>
+                    <li><i class="fas fa-map-marker-alt"></i>22 Innovative Area, San Francisco, CA 94043, US</li>
+                    <li><i class="fas fa-phone"></i><a class="turquoise" href="tel:003024630820">+81 720 2212</a></li>
+                    <li><i class="fas fa-envelope"></i><a class="turquoise"
+                            href="mailto:rezgui2end@gmail.com">rezgui2end@gmail.comm</a></li>
+                </ul>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="map-responsive">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100939.98555098464!2d-122.507640204439!3d37.757814996609724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80859a6d00690021%3A0x4a501367f076adff!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1sen!2sro!4v1498231462606"
+                        allowfullscreen></iframe>
+                </div>
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+
+                <!-- Contact Form -->
+                <form id="contactForm" data-toggle="validator" data-focus="true">
+                    <div class="form-group">
+                        <input type="text" class="form-control-input" id="cname" [(ngModel)]="mailForm.name" name="name"
+                            required>
+                        <label class="label-control" for="cname">Nom et prenom</label>
+                        <div *ngIf="mailForm.name === '' || !mailForm.name" class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control-input" id="cemail" [(ngModel)]="mailForm.email"
+                            name="email" required>
+                        <label class="label-control" for="cemail">Email</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control-textarea" id="cmessage" [(ngModel)]="mailForm.message"
+                            name="message" required></textarea>
+                        <label class="label-control" for="cmessage">Message</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- <div class="form-group checkbox">
                       <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree with Evolo's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
                       <div class="help-block with-errors"></div>
                   </div> -->
-                  <div class="form-group">
-                      <button type="submit" class="form-control-submit-button" (click)="sendMail()"   >Envoyer</button>
-                  </div>
-                  <div class="form-message">
-                      <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                  </div>
-              </form>
-              <!-- end of contact form -->
+                    <div class="form-group">
+                        <button type="submit" class="form-control-submit-button" (click)="sendMail()">Envoyer</button>
+                    </div>
+                    <div class="form-message">
+                        <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                    </div>
+                </form>
+                <!-- end of contact form -->
 
-          </div> <!-- end of col -->
-      </div> <!-- end of row -->
-  </div> <!-- end of container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
 </div> <!-- end of form-2 -->
 <!-- end of contact -->
 
 
 <!-- Footer -->
 <div class="footer">
-  <div class="container">
-      <div class="row">
-          <div class="col-md-4">
-              <div class="footer-col">
-                  <h4>A propos de SRPG</h4>
-                  <p>We're passionate about offering some of the best business growth services for startups</p>
-              </div>
-          </div> <!-- end of col -->
-          <div class="col-md-4">
-              <div class="footer-col middle">
-                  <h4>Important Links</h4>
-                  <ul class="list-unstyled li-space-lg">
-                      <li class="media">
-                          <i class="fas fa-square"></i>
-                          <div class="media-body">Our business partners <a class="turquoise" href="#your-link">startupguide.com</a></div>
-                      </li>
-                      <li class="media">
-                          <i class="fas fa-square"></i>
-                          <div class="media-body">Read our <a class="turquoise" href="terms-conditions.html">Terms & Conditions</a>, <a class="turquoise" href="privacy-policy.html">Privacy Policy</a></div>
-                      </li>
-                  </ul>
-              </div>
-          </div> <!-- end of col -->
-          <div class="col-md-4">
-              <div class="footer-col last">
-                  <h4>Social Media</h4>
-                  <span class="fa-stack">
-                      <a href="#your-link">
-                          <i class="fas fa-circle fa-stack-2x"></i>
-                          <i class="fab fa-facebook-f fa-stack-1x"></i>
-                      </a>
-                  </span>
-                  <span class="fa-stack">
-                      <a href="#your-link">
-                          <i class="fas fa-circle fa-stack-2x"></i>
-                          <i class="fab fa-twitter fa-stack-1x"></i>
-                      </a>
-                  </span>
-                  <span class="fa-stack">
-                      <a href="#your-link">
-                          <i class="fas fa-circle fa-stack-2x"></i>
-                          <i class="fab fa-google-plus-g fa-stack-1x"></i>
-                      </a>
-                  </span>
-                  <span class="fa-stack">
-                      <a href="#your-link">
-                          <i class="fas fa-circle fa-stack-2x"></i>
-                          <i class="fab fa-instagram fa-stack-1x"></i>
-                      </a>
-                  </span>
-                  <span class="fa-stack">
-                      <a href="#your-link">
-                          <i class="fas fa-circle fa-stack-2x"></i>
-                          <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                      </a>
-                  </span>
-              </div> 
-          </div> <!-- end of col -->
-      </div> <!-- end of row -->
-  </div> <!-- end of container -->
-</div> <!-- end of footer -->  
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="footer-col">
+                    <h4>A propos de SRPG</h4>
+                    <p>We're passionate about offering some of the best business growth services for startups</p>
+                </div>
+            </div> <!-- end of col -->
+            <div class="col-md-4">
+                <div class="footer-col middle">
+                    <h4>Important Links</h4>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body">Our business partners <a class="turquoise"
+                                    href="#your-link">startupguide.com</a></div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body">Read our <a class="turquoise" href="terms-conditions.html">Terms &
+                                    Conditions</a>, <a class="turquoise" href="privacy-policy.html">Privacy Policy</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- end of col -->
+            <div class="col-md-4">
+                <div class="footer-col last">
+                    <h4>Social Media</h4>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-google-plus-g fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-instagram fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of footer -->
 <!-- end of footer -->
 
 
 <!-- Copyright -->
 <div class="copyright">
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-12">
-              <p class="p-small">Copyright © 2020 <a href="#">Umbrella smart Group</a> - All rights reserved</p>
-          </div> <!-- end of col -->
-      </div> <!-- enf of row -->
-  </div> <!-- end of container -->
-</div> <!-- end of copyright --> 
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="p-small">Copyright © 2020 <a href="#">Umbrella smart Group</a> - All rights reserved</p>
+            </div> <!-- end of col -->
+        </div> <!-- enf of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of copyright -->
 <!-- end of copyright -->

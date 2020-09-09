@@ -10,7 +10,14 @@ export class SendMailServiceService {
 
   constructor(private http: HttpClient) { }
 
+  private baseUrl = 'https://dry-temple-03099.herokuapp.com/';
+
+  private baseUrlDev = 'http://localhost:3000/';
+
   sendEmail(obj: Iinfo): Observable<Iinfo> {
     return this.http.post<Iinfo>('https://dry-temple-03099.herokuapp.com/sendFormData', obj);
+  }
+  sendQuotationRequest(obj: Iinfo): Observable<Iinfo> {
+    return this.http.post<Iinfo>(this.baseUrl + 'quotationRequest', obj);
   }
 }

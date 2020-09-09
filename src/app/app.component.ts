@@ -1,3 +1,4 @@
+import { RequestObject } from './interface/reqestObject';
 import { Iinfo } from './interface/info.model';
 import { Component } from '@angular/core';
 import { Subscription } from 'rxjs/internal/Subscription';
@@ -14,11 +15,21 @@ export class AppComponent {
   constructor(private sendmailservice: SendMailServiceService) { }
 
   mailForm = new Iinfo();
+  quotationRequestObject = new RequestObject();
 
 
   sendMail() {
-    console.log(this.mailForm);
     this.subscription = this.sendmailservice.sendEmail(this.mailForm).
+    subscribe(data => {
+      const msg = data.message;
+      alert(msg);
+    }, error => {
+      console.error(error, 'error');
+    } );
+  }
+
+  sendQuotationRequest(){
+    this.subscription = this.sendmailservice.sendQuotationRequest(this.quotationRequestObject).
     subscribe(data => {
       const msg = data.message;
       alert(msg);
